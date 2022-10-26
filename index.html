@@ -1,0 +1,56 @@
+<!DOCTYPE html>1
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 2</title>
+    <link rel="stylesheet" href="css/styles.css" >
+    <script src="./java.js" defer></script>
+</head>
+
+<body>
+    <div class="product-image">
+        <img src="img/auto.jpg">
+    </div>
+    <div class="product-details">
+        <div class="product-details-content">
+            <h2>Automovil</h2>
+            <form action="">
+                <div class="form-control">
+                    <label>Color</label>
+                    <select id="colour" onchange="changeProductImage()">
+                        <option disabled selected value="0"> -- Seleccione una opción -- </option>
+                        <option value="rojo">Rojo</option>
+                        <option value="gris">Gris</option>
+                        <option value="blanco">blanco</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <label>Marca</label>
+                    <select name="marca" id="marca">
+                        <option disabled selected value="0"> -- Seleccione una opción -- </option>
+                        <option value="Fiat">Fiat</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Volkswagen">Volkswagen</option>
+                        <option value="Honda">Honda</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <label>Cantidad</label>
+                    <input id="cant" type="number"  value="0" min="0" max="10" />
+                </div>
+                <div class="form-control">
+                    <button type="button" onclick="calculatePrice()">Cotizar</button>
+                </div>
+                <div id="result" class="form-control">
+                    resultado de la cotizacion
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
